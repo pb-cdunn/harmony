@@ -26,7 +26,7 @@ endforeach
 ## threads
 harmony_thread_dep = dependency('threads', required : true)
 ## boost
-harmony_boost_dep = dependency('boost', required : true)
+harmony_boost_dep = dependency('boost', required : true, include_type : 'system')
 ## zlib
 harmony_zlib_dep = dependency('zlib', required : true, fallback : ['zlib', 'zlib_dep'])
 ## pbbam
