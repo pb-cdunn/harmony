@@ -5,9 +5,11 @@ args = commandArgs(trailingOnly=TRUE)
 if (length(args) == 0)
   stop("Provide the profiles.txt files\n", call.=FALSE)
 
-library(vroom)
+#install.packages(c("vroom", "dplyr", "ggplot2"), repo = "https://lib.ugent.be/CRAN/")
+install.packages("vroom", repo = "https://lib.ugent.be/CRAN/")
 library(dplyr)
 library(ggplot2)
+library(vroom)
 
 data = NULL
 
